@@ -4,3 +4,5 @@ devel
 install
 logs
 output
+*cmake-build-debug
+.idea/

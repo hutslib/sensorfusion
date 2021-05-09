@@ -5,7 +5,7 @@ SET(CMAKE_BUILD_TYPE "Release")
 SET(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
 add_compile_options(-std=c++14)
 add_definitions(-std=c++14)
-
+list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
